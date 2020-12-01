@@ -1,0 +1,351 @@
+@media (max-width: 1190px) {
+  .bannerConnect h1 {
+    font-size: 70px;
+    line-height: 110%;
+    margin: 40px 0px 55px 0px;
+  }
+  .promo-item {
+    height: 400px;
+    padding-bottom: 35px;
+  }
+  .promo-item:first-of-type {
+    padding: 20px;
+    padding-right: 60px;
+  }
+  .promo-item:first-of-type .promo-item__image {
+    width: 55%;
+  }
+  .promo-item__text-area {
+    width: 40%;
+  }
+  .promo-item__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .section-title {
+    font-size: 60px;
+    line-height: 67px;
+  }
+  .projects-container .swiper-wrapper {
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  header .container {
+    justify-content: space-between;
+  }
+  .bannerConnect h1 {
+    font-size: 50px;
+    line-height: 110%;
+    margin: 20px 0px 35px 0px;
+  }
+  .promo-item {
+    height: 320px;
+    padding-bottom: 27px;
+  }
+  .promo-item:first-of-type {
+    padding: 20px;
+    padding-right: 40px;
+  }
+  .promo-item:first-of-type .promo-item__image {
+    width: 50%;
+  }
+  .promo-item__text-area {
+    width: 45%;
+  }
+  .promo-item__title {
+    font-size: 33px;
+    line-height: 40px;
+  }
+  .promo-item__subtitle {
+    margin-top: 17px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .section-title {
+    font-size: 57px;
+    line-height: 65px;
+    width: 80%;
+  }
+  .bannerConnect .container {
+    padding: 80px 0 75px 0;
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 855px) {
+  .promo-item {
+    height: 240px;
+    width: 100% !important;
+    flex-basis: 100% !important;
+    flex-direction: row;
+    margin-bottom: 25px !important;
+    padding: 20px;
+  }
+  .promo-item .promo-item__image {
+    width: 50%;
+    height: 100%;
+  }
+  .promo-item__title {
+    width: 45%;
+  }
+  .promo-item__text-area .promo-item__title {
+    width: 100%;
+  }
+  .section-title {
+    font-size: 45px;
+    line-height: 57px;
+    width: 80%;
+  }
+  .projectsSection .suptitle {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 785px) {
+  footer a {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 755px) {
+  .bannerConnect h1 {
+    font-size: 40px;
+    margin: 20px 0px 35px 0px;
+  }
+  .bannerConnect button {
+    font-size: 25px;
+    line-height: 36px;
+    padding: 13px 25px;
+  }
+  .promo-item {
+    height: 400px;
+    width: 100% !important;
+    flex-basis: 100% !important;
+    flex-direction: column !important;
+    margin-bottom: 25px !important;
+    padding: 20px !important;
+  }
+  .promo-item .promo-item__image {
+    background-position: center top;
+    width: 100% !important;
+    height: 70% !important;
+  }
+  .promo-item__title {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .promo-item:first-of-type .promo-item__title {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .promo-item__text-area {
+    width: 100% !important;
+  }
+  .promo-item__text-area .promo-item__title {
+    width: 100% !important;
+  }
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer a:last-of-type {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+/* SHOW BURGER */
+
+.burger-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../images/icons8-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: none;
+}
+.sidenav {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 ширина - изменить это с помощью JavaScript */
+  position: fixed; /* Оставайтесь на месте */
+  z-index: 1; /* Оставайтесь сверху */
+  top: 0; /* Оставайтесь наверху */
+  left: 0;
+  background-color: rgba(45, 43, 130, 0.9); /* Фон*/
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
+  flex-direction: column;
+  justify-content: center;
+}
+.sidenav a {
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #fff;
+  white-space: nowrap;
+  display: block;
+  transition: 0.3s;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: -5px;
+  right: calc(10% + 5px);
+  font-size: 70px;
+  line-height: 1;
+  width: 50px;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .burger-icon {
+    display: block;
+  }
+  .header__menu_link:nth-of-type(2),
+  .header__menu_link:nth-of-type(3),
+  .header__menu_link:nth-of-type(4) {
+    display: none;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 660px) {
+  .floating-swiper {
+    position: static;
+  }
+  .projectsSection {
+    padding-bottom: 0;
+  }
+  .projects-container .swiper-wrapper {
+    padding: 60px 0 0 30px;
+  }
+}
+
+@media (max-width: 630px) {
+  .bannerConnect h1 {
+    width: 100%;
+    margin-bottom: 100%;
+  }
+  .bannerConnect .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bannerConnect .container {
+    background-position: center 280px;
+    background-size: 70% auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 38px;
+    line-height: 45px;
+    width: 100%;
+  }
+  .promo-item:first-of-type {
+    height: 460px;
+    padding-bottom: 50px !important;
+  }
+  .promo-item:first-of-type .promo-item__image {
+    height: 55% !important;
+  }
+  .sidenav a {
+    padding: 10px 10px;
+    font-size: 22px;
+    margin: 10px 0;
+    letter-spacing: 5px;
+  }
+  .section-title {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 430px) {
+  .bannerConnect .container {
+    padding: 60px 0;
+  }
+  .bannerConnect p {
+    font-size: 18px;
+  }
+  .bannerConnect h1 {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+  .bannerConnect .container {
+    background-position: center 55%;
+  }
+  .bannerConnect button {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .projectsSection .suptitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 374px) {
+  .sidenav a {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  footer a:last-of-type {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+  .promo-item:first-of-type {
+    height: 360px;
+    padding-bottom: 30px !important;
+  }
+  .promo-item__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .promo-item__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .promo-item {
+    height: 220px;
+  }
+}

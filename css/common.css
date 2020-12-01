@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.container {
+  max-width: 1165px;
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.non-scroll {
+  overflow-y: hidden;
+}
+
+/* ********************************************* */
+/* header */
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 43, 130, 0.9) 0%,
+    rgba(172, 86, 193, 0.9) 100%
+  );
+}
+header .container {
+  justify-content: center;
+  padding: 15px 0;
+}
+#logo {
+  width: 49px;
+  height: 43px;
+  margin-right: 20px;
+}
+#logo img {
+  height: 100%;
+}
+.header__menu_link {
+  margin: 0 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+.header__menu_link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  left: 50%;
+  bottom: 0;
+  transition: width 0.3s ease-out;
+}
+.header__menu_link:hover::after {
+  width: 50%;
+}
+
+.header__menu_link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  right: 50%;
+  bottom: 0;
+  transition: width 0.3s ease-out;
+}
+.header__menu_link:hover::before {
+  width: 50%;
+}
+
+/* ****************************************************** */
+/* footer */
+
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(172, 86, 193, 0.9) 0%,
+    rgba(45, 43, 130, 0.9) 100%
+  );
+}
+footer .container {
+  justify-content: center;
+  padding: 15px 0;
+}
+footer a {
+  margin: 0 25px;
+}
+footer a:last-of-type {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
