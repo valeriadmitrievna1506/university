@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./font/stylesheet.css" /> 
+    <link rel="stylesheet" href="./font/stylesheet.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./mobile/common.css">
+    <link rel="stylesheet" href="./mobile/common.css" />
 
     <link rel="stylesheet" href="./css/main-page.css" />
-    <link rel="stylesheet" href="./mobile/main-page.css">
+    <link rel="stylesheet" href="./mobile/main-page.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <title>Вуз будущего</title>
@@ -23,12 +23,17 @@
           <a href="#">Вход</a>
         </div>
 
-        <a href="#" id="logo"
-          ><img src="./images/logo_sfedu_white.png" alt=""
-        /></a>
-        <a href="#" class="header__menu_link">Новости</a>
-        <a href="#" class="header__menu_link">Запись на проекты</a>
-        <a href="#" class="header__menu_link">Вход</a>
+        <div class="half_nav flex">
+          <a href="#" id="logo"
+            ><img src="./images/logo_sfedu_white.png" alt=""
+          /></a>
+          <a href="#" class="header__menu_link">Новости</a>
+        </div>
+        <div class="half_nav flex">
+          <a href="#" class="header__menu_link">Запись на проекты</a>
+          <a href="#" class="header__menu_link">Вход</a>
+        </div>
+
         <div class="burger-icon">
           <span></span>
         </div>
@@ -78,14 +83,14 @@
           <p class="suptitle">Проектный офис ИКТИБ</p>
           <p class="section-title">Запись на творческие проекты</p>
 
-            <div class="projects">
-              <!-- Slider main container -->
+          <div class="projects">
+            <!-- Slider main container -->
             <div class="swiper-container projects-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name1</p>
+                  <a href="#" class="title">Name1</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -94,7 +99,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name2</p>
+                  <a href="#" class="title">Name2</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -103,7 +108,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name3</p>
+                  <a href="#" class="title">Name3</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -112,7 +117,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name4</p>
+                  <a href="#" class="title">Name4</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -121,7 +126,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name5</p>
+                  <a href="#" class="title">Name5</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -130,7 +135,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name6</p>
+                  <a href="#" class="title">Name6</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -139,7 +144,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name7</p>
+                  <a href="#" class="title">Name7</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -148,7 +153,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name8</p>
+                  <a href="#" class="title">Name8</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -157,7 +162,7 @@
                   <a href="#" class="team">Experienced team</a>
                 </div>
                 <div class="swiper-slide project-slide flex">
-                  <p class="title">Name9</p>
+                  <a href="#" class="title">Name9</a>
                   <p class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing Ac
                     aliquam ac volutpat, viverra magna risus aliquam massa. Ac
@@ -174,28 +179,42 @@
               <!-- my navigation -->
               <div class="my_navigation">
                 <img id="projectsPrev" src="./images/arrow_right.svg" alt="" />
-              <img id="projectsNext" src="./images/arrow_right.svg" alt="" />
+                <img id="projectsNext" src="./images/arrow_right.svg" alt="" />
               </div>
-              
             </div>
-            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-        <div class="container flex">
-            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
-                <img src="./images/instagramm.svg" alt="">
-            </a>
-            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
-                <img src="./images/facebook.svg" alt="">
-            </a>
-            <a href="http://vk.com" target="_blank" rel="noopener noreferrer" class="social-link">
-                <img src="./images/vk.svg" alt="">
-            </a>
-            <a href="tel:+7(863) 218-40-00">+7(863) 218-40-00 ЮФУ</a>
-        </div>
+      <div class="container flex">
+        <a
+          href="http://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <img src="./images/instagramm.svg" alt="" />
+        </a>
+        <a
+          href="http://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <img src="./images/facebook.svg" alt="" />
+        </a>
+        <a
+          href="http://vk.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <img src="./images/vk.svg" alt="" />
+        </a>
+        <a href="tel:+7(863) 218-40-00">+7(863) 218-40-00 ЮФУ</a>
+      </div>
     </footer>
 
     <script src="./js/jquery-3.4.1.min.js"></script>

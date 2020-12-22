@@ -47,7 +47,6 @@ header {
   position: relative;
 }
 header .container {
-  justify-content: center;
   padding: 15px 0;
 }
 #logo {
@@ -193,6 +192,7 @@ footer .container {
 }
 footer a {
   margin: 0 25px;
+  transition: 0.3s;
 }
 footer a:last-of-type {
   font-family: "HelveticaNeueCyr";
@@ -202,4 +202,10 @@ footer a:last-of-type {
   letter-spacing: 0.11em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: 750px) {
+  footer .social-link:hover {
+    transform: scale(1.3);
+  }
 }

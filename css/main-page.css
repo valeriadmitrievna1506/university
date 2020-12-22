@@ -104,8 +104,12 @@
   height: 75%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: auto 100%;
   border-radius: 8px;
+  transition: 0.3s;
+}
+.promo-item:hover .promo-item__image {
+  background-size: auto 104%;
 }
 .promo-item:first-of-type {
   margin-bottom: 25px;
@@ -222,6 +226,10 @@
   letter-spacing: -0.01em;
   color: rgba(17, 19, 30, 0.2);
   margin-top: 20px;
+  transition: 0.3s;
+}
+.project-slide.swiper-slide-active:hover .team {
+  color: rgba(17, 19, 30, 0.7);
 }
 
 .swiper-button-prev,
