@@ -1,17 +1,21 @@
 var projectsSwiper = new Swiper(".projects-container", {
-  speed: 400,
+  speed: 300,
+  // centeredSlides: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 2,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    660: {
-      spaceBetween: 38,
-      slidesPerView: "auto",
+    900: {
+      loopedSlides: 2,
+      slidesPerView: 2,
     },
     100: {
+      loopedSlides: 1,
       slidesPerView: 1,
-      spaceBetween: 30,
     },
   },
 });
